@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); /* "Jost"   */
+/* *{
+    margin:0;
+   
+   
+} */
+ html, body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-image: url(/img/fondo2.png);
+    background-repeat: repeat;
+    background-size: auto;
+ }
+
+.containerLogoIndex{
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+}
+/* .containerLogoIndex img{
+
+    width: 600px;
+} */
+/* @media (max-width: 896px) {
+ .body{
+
+    .containerLogoIndex{
+        margin-bottom: auto;
+    }
+    .containerLogoIndex img{
+        margin-top: 8% ;
+        width: 500px;
+        height: auto;
+    }
+} */
+section{
+    display: block;
+}
+@media (max-width: 768px) {
+
+    .containerLogoIndex{
+        margin-bottom: 0;
+    }
+    .containerLogoIndex img{
+        margin-top: 8% ;
+        width: 500px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 568px){
+
+    .containerLogoIndex img{
+        width: 100%;
+        height: auto;
+        /* padding-left: 10%; */
+
+    }
+}
+@media (max-width: 430px) {
+
+    .body{
+        width: 100%;
+        height: auto;
+        background-image: url(/img/fondo2.png);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    .containerLogoIndex img{
+        padding-bottom: 0;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+/* @media (max-width: 430px) {
+    .body{
+    width: 100%;
+    height: auto;
+    background-image: url(/img/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+

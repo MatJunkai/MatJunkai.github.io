@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedorFormulario">
+        <!-- boton desplegable con formulario de contacto -->
+         <button type="button" class="botonFormulario" id="boton" >Formulario</button>
+         <form class="formulario" id="form">
+            <input type="text" placeholder="Nombre"><br>
+            <input type="email" placeholder="Mail"><br>
+            <textarea placeholder="Mensaje"></textarea><br>
+            <button type="submit" class="botonEnviar">Enviar</button>
+         </form>
+     </div>
+<style>
+
+@media (min-width: 1200px) { 
+    .botonFormulario{
+        display: none;
+    }
+    }
+
+
+    @media (max-width: 1200px) { 
+        .formulario{
+            display: none;
+        }
+    }
+</style>
+
+
+     <script src="/js/botonContacto.js">
+
+     </script>
+</body>
+</html>

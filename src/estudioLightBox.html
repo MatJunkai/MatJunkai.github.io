@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/pruebas/estudioLightBox.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/animacionLapiz.css">
+    <link rel="stylesheet" href="/css/sidenav.css">
+    <link rel="stylesheet" href="/css/onda.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="icon" href="/iconos/21gredondo.ico">
+    <title>El estudio</title>
+</head>
+<body>
+    <div id="nav">
+    </div>
+   <div class="galeria">
+    <a href="/img/fotos/estudio1.jpg" class="lightbox-link" data-lightbox="galeria1">
+        <img src="/img/fotos/estudio1.jpg" alt="imagen 1">
+    </a>
+   
+   <a href="/img/fotos/estudio2.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/estudio2.jpg" alt="imagen 2">
+   </a>
+
+   <a href="/img/fotos/estudio3.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/estudio3.jpg" alt="imagen 3">
+   </a>
+
+   <a href="/img/fotos/estudio4.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/estudio4.jpg" alt="imagen 4">
+   </a>
+   <a href="/img/fotos/estudio5.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/estudio5.jpg" alt="imagen 5">
+   </a>
+<a href="/img/fotos/estudio6.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/estudio6.jpg" alt="imagen 6">
+   </a>
+   <a href="/img/fotos/salaMezcla1.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/salaMezcla1.jpg" alt="imagen 7">
+   </a>
+   <a href="/img/fotos/salaMezcla2.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/salaMezcla2.jpg" alt="imagen 7">
+   </a>
+   <a href="/img/fotos/salaMezcla3.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/salaMezcla3.jpg" alt="imagen 7">
+   </a>
+ <a href="/img/fotos/salaMezcla4.jpg" class="lightbox-link" data-lightbox="galeria1">
+    <img src="/img/fotos/salaMezcla4.jpg" alt="imagen 7">
+   </a>
+
+   </div>
+
+
+
+
+   <div class="lightbox-overlay" id="lightbox-overlay">
+    <div class="lightbox">
+        <img src="" alt="imagen Ampliada" id="lightbox-image">
+    </div>
+   </div>
+
+<!-- fin imagenes -->
+
+<div class="textoInformativo">
+  <!-- texto informativo -->
+   <p>- Estos precios incluyen ingeniero de sonido y todo el equipamiento del estudio, así como el backline (confirmar disponibilidad).</p>
+   <p>-  Base de día son 8 horas, en horario de 9.30h a 14:00h y de 16:30h a 20:00h. (posibilidad de otros horarios)</p>
+   <p>- Los días de grabación y mezcla indicados son meramente orientativos , podrán ser distribuidos según las necesidades de cada cliente.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div id="ondas">
+        <!-- onda -->
+    </div>
+    <div id="iconosFooter">
+        <!-- footer -->
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.lightbox-link');
+  const overlay = document.getElementById('lightbox-overlay');
+  const lightboxImg = document.getElementById('lightbox-image');
+
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const imgSrc = this.getAttribute('href');
+      lightboxImg.src = imgSrc;
+      overlay.classList.add('lightbox-active');
+    });
+  });
+
+  overlay.addEventListener('click', function () {
+    overlay.classList.remove('lightbox-active');
+  });
+});
+
+    </script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/rutas.js"></script>
+</body>
+</html>

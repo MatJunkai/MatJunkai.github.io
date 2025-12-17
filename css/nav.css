@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); /* "Jost"   */
+/* *{
+  box-sizing: border-box;
+} */
+.header{
+  width: 100%;
+  height: auto;
+}
+
+.nav{
+   
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background: none;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.navImg{
+  
+ 
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: flex-center;
+    align-items: center;
+    padding-top: 2%;
+    
+  
+}
+.navImg img{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    padding-left: 15%;
+    /* padding-top: 40px; */
+
+    
+}
+
+
+
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+
+}
+.nav-item{
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+
+.navLinks div a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  font-size: 1.5em;
+}
+
+
+/* .navLinks a::after{
+
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 50%;
+   height: 2px;
+   border-bottom: 3px dashed purple;
+   filter:blur(0.6); 
+   opacity:0;
+   transition: background 0.5s ease, height 0.5 ease;
+    
+    
+}
+
+
+.navLinks a:hover::after{
+
+
+opacity: 1;
+transform: scaleX(1.1);
+
+
+} */
+
+/* .underline{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+.underline line:hover::after{
+    z-index: 5;
+} */
+
+
+/* desplegable */
+
+
+/* contenido oculto por defecto */
+.contenidoDesplegable {
+    /* oculto inicialmente */
+    display: none; /*Hace que no se vea, es la forma en que el usuario veria el menu*/
+    position: absolute;
+    /* ancho minimo */
+    min-width: 160px;
+    /* asegurarse que este por encima de los otros elementos */
+    max-width: 300px;
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  
+    z-index: 1; /* Z es la profundidad como X o Y*/
+  }
+  .contenedorDesplegableChild{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: left;
+  }
+  .contenedorDesplegableChild img{
+    width: 20px;
+    height: 20px;
+    justify-content: left;
+    padding-top: 6px;
+
+  }
+  /* estilos de los enlaces dentro del menu desplegable */
+  
+  .contenidoDesplegable a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* color del fondo al pasar el cursor sobre las opciones desplegables */
+  .contenidoDesplegable a:hover {
+    font-size: 1.6em;
+  }
+  
+  /* mostrar el menu desplegable al pasar el cursor por encima */
+  
+  .nav-item:hover .contenidoDesplegable {
+    display: block;
+    justify-content: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Estilos para el menú móvil (oculto por defecto) */
+/* .navMvl {
+  display: none;
+}
+
+@media (max-width: 920px){
+
+  .navMvl {display:block ;
+}
+
+.nav{display: none;}
+} */
+
+/* @media (max-width: 1700px) {
+.nav {
+    width: 100%;
+    display: flex;
+
+  }
+
+  .navImg img{
+    width: 200px;
+    height: auto;
+    margin: 1% 2% ;
+}
+
+.navLinks{
+  width: 80%;
+  margin: auto;
+}
+} */
+
+
+
+/* RESPONSIVO */
+
+/* tablets */
+@media (max-width: 1024px) {
+
+  .nav{
+    display: none;
+  }
+
+/* .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr;
+    gap: 1px;
+  }
+
+  .navImg{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-center;
+    align-items: baseline;
+    padding-top: 2%; */
+    /* margin: auto; */
+/* 
+  }
+
+ .navImg img{
+    width: 100px;
+    height: auto; */
+    /* margin: auto; 
+    
+}*/
+
+/* .navLinks{
+  width: 80%;
+  margin: auto;
+}
+.navLinks div a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  font-size: 1.2em;
+} */
+
+}
+
+/* Para móviles grandes */
+@media (max-width: 768px) {
+.nav {
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr;
+    gap: 2px;
+  }
+
+  .navImg{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-center;
+    align-items: baseline;
+    padding-top: 2%;
+    
+
+  }
+
+ .navImg img{
+    width: 20px;
+    height: auto;
+    margin: 0;
+   
+    
+}
+
+.navLinks{
+  width: 80%;
+  margin: auto;
+}
+
+}
+
+
+/* Para móviles pequeños */
+
+@media (max-width: 480px) {
+
+  .nav{
+    display: none;
+  }
+  
+}
+
+
+

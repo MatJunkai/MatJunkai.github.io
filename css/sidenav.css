@@ -1,0 +1,101 @@
+/* contendedor de menu lateral */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); /* "Jost"   */
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+  .navMvl{
+    display: none;
+    width: 100%;
+    align-items: right;
+    justify-content: right;
+    z-index: 300;
+  }
+
+  .sideNav {
+    /* ocupa toda la altura de la pantalla */
+    height: 100%;
+    /* ancho inicial de 0 para para que este oculto*/
+    width: 0;
+    /* menu fijo posicionado en el lado izquierdo*/
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    /* ocultar el posicionamiento horizontal (desbordamiento) */
+    overflow-x: hidden;
+    /* desplazamiento al abrir y cerrar sea suave */
+    transition: 0.5s;
+    /* esàcop superior */
+    padding-top: 60px;
+
+    
+  }
+  
+  
+  /* estilos de los enlaces del menu lateral */
+  .sideNav a{
+      padding: 10px 15px;
+      font-size:20px;
+      color: aliceblue;
+      display: block;
+      text-decoration: none;
+      font-family: "Jost";
+  }
+  
+  
+  /* estilo color de fondo al pasar el cursor */
+  .sideNav a:hover{
+  background-color: rgb(92, 5, 133);
+  
+  }
+  
+  /* estilo al boton para abrir el menu */
+  .botonAbrir{
+      font-size: 60px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      width: 50px;
+      margin: 3%;
+
+  }
+  
+  /* estilo al cerrar el menu */
+  .botonCerrar{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  
+  }
+
+ @media(max-width: 1024px){
+  
+    .navMvl{
+      display: flex;
+    }
+  
+  @media (max-width: 667px) {
+
+    .navMvl{
+      margin-left: 0%;
+    }
+    .botonAbrir{
+      font-size: 40px;
+      text-justify: right;
+    }
+    /* .sideNav {
+      padding: 5px 5px;
+      font-size:20px;
+    } */
+  }
+  
+ 
+  }
+  @media (max-width: 480px) {
+    .navMvl{
+      margin: 0;
+    }
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/animacionLapiz.css">
+    <link rel="stylesheet" href="/css/sidenav.css">
+    <link rel="stylesheet" href="/css/onda.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="icon" href="/iconos/21gredondo.ico" type="image/x-icon">
+
+
+    <title>Contacto 21G</title>
+</head>
+<body>
+    <div id="nav" ></div>
+    <div class="contenedroPrincipal">
+        <!-- imgane con baja opacidad como fondo -->
+         <div class="contenedorContacto">
+            <!-- contactos basicos a la izquierda --> 
+        <h1>Contacto</h1>
+        <p> <img src="/img/iconos/telefonoNegro.png" alt="iconoTelefono">644654654</p> 
+        <p> <img src="/img/iconos/gpsNegro.png" alt="iconoGps">Rua Penis, 82, Vigo, Pontevedra</p>
+        <p> <img src="/img/iconos/mailNegro.png" alt="iconoMail">estudio21gramos@gmail.com</p>
+        </div>
+        <!-- CONTENEDOR FORMULARIO -->
+         <div class="contenedorFormulario">
+            <!-- boton desplegable con formulario de contacto -->
+             <button type="button" class="botonFormulario" id="boton" >Formulario</button>
+             <!-- FORMULARIO -->
+             <form class="formulario" id="formularioContacto">
+                <input type="text" name="name" placeholder="Nombre"><br>
+                <input type="email" name="email" placeholder="Mail"><br>
+                <textarea name="mensaje" placeholder="Mensaje"></textarea><br>
+                <button type="submit" class="botonEnviar">Enviar</button>
+             </form>
+         </div>
+    </div>
+    <div id="ondas"></div>
+    <div id="iconosFooter"></div>
+    <script src="/js/rutas.js"></script>
+    <script src="/js/botonContacto.js"></script>
+        <script src="/js/servicioAnime.js"></script>
+        <script src="/js/timer.js"></script>
+        <script src="/js/responsivo.js"></script>
+        <script src="/js/desplegableMenu.js"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="/js/mail.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg_color{
+            width: 100%;
+            height: 70%;
+            /* background-color: aqua; */
+            position: absolute;
+            top: 0;
+        }
+        .wave{
+            width: 100%;
+            height: 100%; 
+            position: absolute;
+            top: 150px; 
+            left: 0;
+            background-image: url(/img/ondas/svg/Vector-1.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        .w1{
+            animation: w1 7s linear infinite;
+        }
+
+        .w2{
+            animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes w1 {
+            0%{
+                margin-left: 0;
+            }
+            100% {
+                margin-left: -1600px;
+            }
+        }
+        @keyframes w2 {
+            0%{
+                margin-left: 0;
+            }
+            100% {
+                margin-left: -1600px;
+            }
+        }
+@keyframes desplazamiento {
+    0%, 100% {
+        transform: translateY(-25px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="cover">
+
+<!-- inicio wave -->
+        <div class="bg_color"></div>
+<div class="wave w1"></div>
+<div class="wave w2"></div>
+    </div>
+</body>
+</html>
+
+
+

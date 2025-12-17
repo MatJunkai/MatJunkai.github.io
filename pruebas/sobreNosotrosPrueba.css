@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); /* "Jost"   */
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+sectionDiv{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.texto{
+    font-family: "Jost";
+    width: 90%;
+    align-content: center;
+    text-align: center;
+    text-justify: auto;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.texto h1{
+    text-align: left;
+}
+.texto p{
+    width: 80%;
+    margin: auto;
+}
+
+.parallax{
+    
+  /*comunica en este caso las 3 div y comparte como fondo de los divs la imagen*/
+  /*configuracion del fondo*/
+  background-image: url("/img/fotos/matEnVivo.jpg");
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+
+}
+.parallax2{
+
+    background-image: url("/img/fotos/braEnVivo.jpg");
+    width: 75%;
+    margin: auto;
+    background-size: cover;
+}
+
+.integrantesDiv1{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height: auto;
+    font-family: "Jost";
+}
+.integrantesDiv2{
+margin: auto;
+    display: flex;
+    width: 80%;
+    height: auto;
+    font-family: "Jost";
+}
+.integrantesDiv1 span{
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    padding: 2% 3%;
+    /* background-color: rgba(182, 21, 168, 0.37); */
+    text-align: center;
+    align-content: center;
+}
+
+.integrantesDiv2 span{
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    padding: 2% 3%;
+    /* background-color: rgba(182, 21, 168, 0.37); */
+    text-align: center;
+    align-content: center;
+    
+}
+
+.sectionDiv{
+    display: block;
+}

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); /* "Jost"   */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Jost';
+     background-image: url("/img/logos/[Logo]21G\ 1_bajaOpacidad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.contenedroPrincipal{
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    height: auto; /*revisar la altura*/
+    /* background-image: url("/img/logos/[Logo]21G\ 1_bajaOpacidad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    justify-content: space-between;
+}
+.contenedorContacto{
+    /* display: block; */
+    width: 50%;
+    justify-content: right;
+    text-align: right;
+    margin: auto;
+    margin-left: 12%;
+}
+.contenedorContacto h1{
+   text-decoration-line: underline;
+   text-align: left;
+   font-size: xx-large;
+}
+.contenedorContacto p{
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    justify-content: center;
+    font-size: x-large;
+    
+}
+.contenedorContacto img{
+    padding-right: 20px;
+    width: 3%;
+    height: 3%;
+}
+.botonFormulario{
+    display: none;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.contenedorFormulario{
+    display: grid;
+    box-sizing:border-box;
+    width: 450px;
+    height: 400px;
+    align-items: right;
+    background-color: rgb(9, 1, 5);
+    border-radius: 15px;
+    margin: auto;
+    /* margin-right: 60px;
+    margin-top: 30px; */
+}
+.contenedorFormulario form{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    
+}
+.contenedorFormulario form input{
+    width: 90%;
+    height: 33px;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 10px;
+    /* font-family: 'Jost'; */
+    
+}
+.contenedorFormulario textarea{
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.botonEnviar{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Jost';
+    font-size: medium;
+    border-style: none;
+    border-radius: 10px;
+    width: 91%;
+    height: 30px;
+    background-color: rgb(113, 93, 242);
+    color: white;
+    font-weight: bold;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+
+/* @media (max-width: 1025px) { 
+    #boton{
+        display: none;
+        background: none;
+    }
+    #form{
+        display: block;
+        
+    }
+    } */
+        
+
+/* Para tablets */
+@media (max-width: 1024px) {
+.contenedroPrincipal{
+    margin-top: 0;
+        display: grid ;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+.contenedorContacto{
+        display: block;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        /* margin-left: 3%; */
+    }
+.contenedorContacto h1{
+       text-decoration-line: underline;
+       text-align: center;
+       font-size: xx-large;
+       /* font-family: 'Jost'; */
+    }
+
+.contenedorContacto p{
+        font-weight: bold;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center;
+        font-size: x-large;
+        font-weight: bold;
+        /* font-family: 'Jost'; */
+}
+
+.contenedorContacto img{
+                padding-right: 3%;
+                width: 8%;
+                height: 8%;
+                padding-top: 2%;
+            }
+    
+.contenedorFormulario{
+        /* margin-top: 2%; */
+        background-color: transparent;
+        margin: auto;
+        /* padding: 1%; */
+        width: 100%;
+        font-size: xx-large;
+        justify-content: center;
+        align-content: center;
+    }
+
+.formulario{
+            display: none;
+            background-color: rgb(9, 1, 5);
+            border-radius: 15px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2%;
+            width: fit-content;
+            height: auto;
+
+    }
+   
+
+.botonFormulario{
+        /* top: 0; */
+        /* margin-top: auto; */
+        display: block;
+        /* justify-content: center; */
+        text-align: center;
+        margin: auto;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        height: 35px;
+        line-height: 50%;
+        background-color: rgb(113, 93, 242);
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+
+
+} 
+
+
+/* Para móviles grandes */
+@media (max-width: 768px) {
+    .contenedorContacto h1{
+            text-decoration-line: underline;
+            text-align: center;
+            font-size: xx-large;
+         }
+    
+    .contenedorContacto p{
+            font-weight: bold;
+            margin-top: 1%;
+            text-align: center;
+            justify-content: center;
+            font-size: x-large;
+            font-weight: bold;
+                }
+    .contenedorContacto img{
+                    padding-right: 3%;
+                    width: 8%;
+                    height: 8%;
+                    padding-top: 2%;
+                }
+    .contenedorFormulario{
+            margin-top: 2%;
+            background-color: transparent;
+            margin: auto;
+            /* padding: 1%; */
+            width: 100%;
+            font-size: xx-large;
+            justify-content: center;
+            align-content: center;
+        }
+    
+    .formulario{
+                display: none;
+                background-color: rgb(9, 1, 5);
+                border-radius: 15px;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 2%;
+                width: 100%;
+    
+        }
+        /* .formulario input, textarea{
+            width: 600px;
+        } */
+    
+    .botonFormulario{
+            top: 0;
+            margin-top: auto;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+        }
+        
+    /* .botonFormulario form{
+        width: 10px;
+    
+    } */
+}
+
+    /* Para móviles pequeños */
+
+@media (max-width: 480px) {
+    .contenedroPrincipal{
+        width: 100%;
+        height: auto;
+    }
+    
+    .contenedorContacto{
+        /* display: block; */
+        width: 100%;
+        /* justify-content: center; */
+        text-align: center;
+        margin: auto;
+        /* margin-left: 3%; */
+    }
+    .contenedorContacto h1{
+       text-decoration-line: underline;
+       text-align: center;
+       font-size: larger;
+       /* font-family: 'Jost'; */
+    
+    }
+    .contenedorContacto p{
+        /* font-family: 'Jost'; */
+        font-weight: bold;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center;
+        font-size: medium;
+            }
+    .contenedorContacto img{
+                padding-right: 3%;
+                width: 15px;
+                height: 15px;
+            }
+    
+    .contenedorFormulario{
+                display: block;
+                box-sizing:border-box;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                /* background-color: rgb(9, 1, 5); */
+                border-radius: 15px;
+                margin: auto;
+                /* margin-right: 1%; */
+                margin-top: 3%; 
+            }
+    .contenedorFormulario form{
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1%;
+                
+            }
+    .contenedorFormulario form input{
+                width: 90%;
+                height: 33px;
+                margin-top: 10px;
+                border-style: none;
+                border-radius: 10px;
+                /* font-family: 'Jost'; */
+                
+            }
+    .contenedorFormulario textarea{
+                width: 90%;
+                height: 100px;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+    .botonFormulario{
+        top: 0;
+        display: block;
+        /* width: 100%; */
+        margin-left: 3%;
+        border: none;
+}
+    .contenedorFormulario button{
+                border-radius: 10px;
+                height: 30px;
+                line-height: 50%;
+                background-color: rgb(113, 93, 242);
+                color: white;
+                font-weight: bold;
+                margin: auto;
+            }
+    }

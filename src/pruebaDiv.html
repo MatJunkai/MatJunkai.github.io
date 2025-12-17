@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.oculto {
+    opacity: 0; /* Oculto inicialmente (también puedes usar display: none;) */
+    transition: opacity 1s ease; /* Transición suave (opcional) */
+}
+
+.visible {
+    opacity: 1; /* Visible */
+    /* Si usaste display: none; en .oculto, usa display: block; aquí */
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div id="contenedor1" class="oculto">
+        Este es el contenido del div 1.
+    </div>
+    
+    <div id="contenedor2" class="oculto">
+        Este es el contenido del div 2.
+    </div>
+    
+    <div id="contenedor3" class="oculto">
+        Este es el contenido del div 3.
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contenedores = document.querySelectorAll('.oculto'); // Selecciona todos los divs ocultos
+
+    setTimeout(function() {
+        contenedores.forEach(function(contenedor) {
+            contenedor.classList.add('visible');
+        });
+    }, 3000); // 3000 milisegundos = 3 segundos de retardo
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+.contenedorMain{
+    display: flex;
+    width: 100%;
+
+}
+
+/* primer contenedor */
+.backImg1{
+    background-image: url("/img/fotos/cortes1.4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    width: 25%;
+    margin-right:2px ;
+}
+.contenedorTexto{
+    width: 100%;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /*animation: normal;
+    opacity: 0;  
+  transition: opacity 0.3s ease,*/  /* Transición suave */
+}
+/*.contenedorTexto:hover {
+    opacity: 1;  Visible al pasar el cursor 
+    visibility: visible;*/ /* Visible al pasar el cursor
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  } */
+
+
+.contenedorTexto h1{
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-family: 'Jost';
+    animation: normal;
+
+}
+
+.contenedorTexto p{
+    font-family: 'Jost';
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-justify: auto;
+
+}
+.contenedorTexto :nth-child(2){
+    margin-top: 60px;
+    padding-top: 20px;
+
+}
+.contenedorTexto :nth-child(4){
+    padding-bottom: 20px;
+}
+
+/* segundo contenedor */
+
+.backImg2{
+    background-image: url("/img/fotos/corte2.4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    height: 780px;
+    width: 25%;
+    margin-right:2px ;
+}
+
+
+
+/* tercero contenedor */
+
+.backImg3{
+    background-image: url("/img/fotos/corte3.4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    height: 780px;
+    width: 25%;
+    margin-right:2px ;
+}
+
+
+
+
+/* cuarto contenedor */
+
+.backImg4{
+    background-image: url("/img/fotos/cortes4.4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    height: 780px;
+    width: 25%;
+    margin-right:2px ;
+}
+
+ .oculto{
+ opacity: 0;
+ transition: opacity 1s ease;
+}
+
+.visible{
+    opacity: 1;
+} 
+
+

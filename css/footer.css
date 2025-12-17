@@ -1,0 +1,22 @@
+.iconFooter{
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: right;
+    gap: 3px;
+    z-index: 100;
+    /* margin-right: 15px;
+    margin-bottom: 3px; */
+}
+
+.iconFooter a img{
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+

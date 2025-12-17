@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/animacionLapiz.css">
+    <link rel="stylesheet" href="/css/sidenav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Nav 21G</title>
+</head>
+<body>
+  
+    <nav class="nav" id="navEscritorio">
+        <div class="navImg">
+            <img src="/img/logos/tipografia.png" alt="logoNav">
+        </div>
+        <!-- contenedor principal de los enlaces -->
+        <div class="navLinks">
+            <!-- contenedor donde incluimos cada trazo -->
+            <div class="nav-item">
+                <a href="index.html">Home</a>
+                <svg class="underline" viewBox="-20 5 100 20" preserveAspectRatio="none">
+                  <path d="M5,10 L55,10" stroke="purple" stroke-width="4"
+                    stroke-linecap="round" fill="transparent"
+                    stroke-dasharray="200"
+                    stroke-dashoffset="200"
+                  />
+                </svg>
+              </div>
+              <div class="nav-item">
+                <a href="servicios.html">Servicios</a>
+                <svg class="underline" viewBox="-20 5 100 20" preserveAspectRatio="none">
+                  <path d="M5,10 L55,10" stroke="purple" stroke-width="4"
+                    stroke-linecap="round" fill="transparent"
+                    stroke-dasharray="200"
+                    stroke-dashoffset="200"
+                  />
+                </svg>
+              </div>
+              <div class="nav-item">
+                <a href="contacto.html">Contacto</a>
+                <svg class="underline" viewBox="-20 5 100 20" preserveAspectRatio="none">
+                  <path d="M5,10 L55,10" stroke="purple" stroke-width="4"
+                    stroke-linecap="round" fill="transparent"
+                    stroke-dasharray="200"
+                    stroke-dashoffset="200"
+                  />
+                </svg>
+              </div>
+              <div class="nav-item">
+                <a href="sobreNosotros.html">Sobre nosotros</a>
+                <svg class="underline" viewBox="-10 5 100 20" preserveAspectRatio="none">
+                  <path d="M5,10 L75,10" stroke="purple" stroke-width="4"
+                    stroke-linecap="round" fill="transparent"
+                    stroke-dasharray="200"
+                    stroke-dashoffset="200"
+                  />
+                </svg>
+
+                <!-- desplegable -->
+                <div class="contenidoDesplegable">
+                  <div class="contenedorDesplegableChild"> <img src="/img/iconos/indeterminate_check_box.png" alt="chekbox"> <a href="estudioLightBox.html">El estudio</a></div>
+                  <!-- <div class="contenedorDesplegableChild"> <img src="/img/iconos/indeterminate_check_box.png" alt="chekbox"><a href="#">Sobre nosotros</a></div> -->
+                  <div class="contenedorDesplegableChild"> <img src="/img/iconos/indeterminate_check_box.png" alt="chekbox"><a href="trabajosHechos.html">Trabajos hechos</a></div>
+                  <div class="contenedorDesplegableChild"> <img src="/img/iconos/indeterminate_check_box.png" alt="chekbox"><a href="equipo.html">Equipo</a></div>
+                </div>
+              </div>
+            
+            
+            
+            
+        </div>
+    </nav>
+    <!-- mvl version -->
+  
+      <div class="navMvl" id="navMovil">
+        <button class="botonAbrir" onclick="openNav()">&#9776;</button>
+    
+        <!-- menu lateral oculto al inicio -->
+        <div class="sideNav" id="side_Nav">
+          <!-- boton para cerrar el menu -->
+          <a href="javascript:void(0)" class="botonCerrar" onclick="closeNav()"
+            >X</a
+          >
+          <a href="index.html">Home</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="sobreNosotros.html">Sobre nosotros</a>
+          <a href="/src/trabajosHechos.html">Trabajos hechos</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="estudioLightBox.html">El estudio</a>
+          <a href="equipo.html">Equipo</a>
+    
+        </div>
+     
+   <script src="/js/desplegableMenu.js"></script>
+    <script src="/js/responsivo.js"></script>
+ </body>
+ </html> 
